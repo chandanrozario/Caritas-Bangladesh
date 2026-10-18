@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your NGO Name</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+:root{--ink:#212121;--green:#b00117;--green2:#8a0112;--sun:#ffffff;--blue:#1863dc;--cream:#f4f4f4;--line:#ebebeb;--mute:#4e4b66}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+h1,h2,h3{font-family:Fraunces,serif;margin:0;line-height:1.15}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.util{background:var(--ink);color:#f3d6da;font-size:13px}
+.util .wrap{display:flex;justify-content:space-between;padding:8px 24px}
+.util span{margin-left:20px}
+header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Fraunces,serif;font-weight:700;font-size:22px;color:var(--green)}
+nav{display:flex;gap:28px;font-weight:500;font-size:15px}
+.btn{display:inline-block;background:var(--green);color:#fff;font-weight:600;padding:12px 24px;border-radius:999px}
+.btn.alt{background:transparent;border:2px solid #fff;color:#fff;padding:10px 22px}
+.hero{background:linear-gradient(120deg,var(--green2),var(--green) 70%,#c8102e);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-top:96px;padding-bottom:96px}
+.hero h1{font-size:56px;margin-bottom:20px}
+.hero p{font-size:19px;color:#f3d6da;max-width:520px}
+.hero .cta{display:flex;gap:14px;margin-top:32px}
+.ph{background:repeating-linear-gradient(45deg,#e9e1cf,#e9e1cf 12px,#f1ead9 12px,#f1ead9 24px);color:#8a7f66;display:flex;align-items:center;justify-content:center;font-size:13px;text-align:center}
+.hero .btn:not(.alt),.appeal .btn{background:#fff;color:var(--green)}
+.hero .ph{height:380px;border-radius:24px}
+.dots{display:flex;gap:8px;margin-top:28px}.dots i{width:28px;height:4px;border-radius:2px;background:#ffffff55}.dots i:first-child{background:var(--sun)}
+section{padding:80px 0}
+.eyebrow{color:var(--green);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px}
+.sh{display:flex;justify-content:space-between;align-items:end;margin-bottom:36px}
+.sh h2{font-size:38px}
+.sh a{color:var(--blue);font-weight:600}
+.focus{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.focus div{background:var(--cream);border-radius:18px;padding:28px}
+.focus svg{width:36px;height:36px;stroke:var(--green);fill:none;stroke-width:1.8;margin-bottom:16px}
+.focus h3{font-size:20px;margin-bottom:8px}.focus p{margin:0;color:var(--mute);font-size:15px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#fff}
+.card .ph{height:200px}
+.card .b{padding:22px}
+.tag{font-size:12px;font-weight:600;color:var(--green);text-transform:uppercase;letter-spacing:.08em}
+.card h3{font-size:21px;margin:8px 0}
+.card p{color:var(--mute);margin:0;font-size:15px}
+.stories{background:var(--cream)}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.story .ph{height:400px;border-radius:24px}
+.story h2{font-size:38px;margin-bottom:18px}
+.story blockquote{margin:24px 0 0;padding-left:18px;border-left:4px solid var(--green);font-family:Fraunces,serif;font-size:20px}
+.appeal{background:var(--green);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}
+.appeal h2{font-size:38px;margin-bottom:14px}
+.bar{height:12px;background:#ffffff33;border-radius:6px;margin:18px 0 8px}.bar i{display:block;height:100%;width:64%;background:var(--sun);border-radius:6px}
+.amts{display:flex;gap:10px;margin-bottom:16px}.amts span{flex:1;text-align:center;border:2px solid #ffffff66;border-radius:12px;padding:10px;font-weight:600}
+.tabs{display:flex;gap:8px;margin-bottom:28px}.tabs span{padding:10px 20px;border-radius:999px;border:1px solid var(--line);font-weight:500}.tabs span:first-child{background:var(--green);color:#fff;border-color:var(--green)}
+.stats{background:var(--ink);color:#fff;text-align:center}
+.stats .g{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.stats b{display:block;font-family:Fraunces,serif;font-size:56px;color:#fff}
+.stats span{color:#f3d6da}
+footer{background:#212121;color:#c9c9c9;padding:64px 0 28px;font-size:15px}
+footer .g{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:40px}
+footer h4{color:#fff;margin:0 0 14px;font-size:16px}
+footer li{list-style:none;margin-bottom:8px}footer ul{padding:0;margin:0}
+.nl{display:flex;gap:8px;margin-top:10px}.nl span{flex:1;background:#ffffff14;border-radius:999px;padding:11px 18px}
+.copy{border-top:1px solid #ffffff22;margin-top:40px;padding-top:20px;display:flex;justify-content:space-between;font-size:13px}
+@media(max-width:900px){
+ nav,.util span{display:none}
+ .hero .wrap,.story,.appeal,footer .g{grid-template-columns:1fr}
+ .hero h1{font-size:38px}
+ .focus,.cards,.stats .g{grid-template-columns:1fr 1fr}
+ .sh{flex-direction:column;align-items:start;gap:8px}
+ .appeal{padding:32px}
+}
+@media(max-width:560px){.focus,.cards{grid-template-columns:1fr}.hero .cta{flex-direction:column}}
+nav a{color:inherit}
+</style></head>
+<body>
+<div class="util"><div class="wrap"><div>[Tagline: short mission statement]</div><div><span>EN | বাংলা</span><span>Contact</span><span>Careers</span></div></div></div>
+
+<header><div class="wrap">
+ <a class="logo" href="#"><svg width="34" height="34" viewBox="0 0 34 34"><circle cx="17" cy="17" r="17" fill="#b00117"></circle><path d="M17 26c-6-4-9-7.500-9-11a5 5 0 0 1 9-3 5 5 0 0 1 9 3c0 3.500-3 7-9 11z" fill="#ffffff"></path></svg>[Your NGO Name]</a>
+ <nav><a href="#">About us</a><a href="#">What we do</a><a href="#">Our work</a><a href="#">Get involved</a><a href="#">News</a></nav>
+ <a class="btn" href="#">Donate</a>
+</div></header>
+
+<div class="hero"><div class="wrap">
+ <div>
+  <div class="eyebrow" style="color:var(--sun)">Together for dignity</div>
+  <h1>Building stronger communities, one family at a time.</h1>
+  <p>Placeholder intro: describe your organisation's mission in two sentences. Who you serve, and the change you want to see.</p>
+  <div class="cta"><a class="btn" href="#">Give today</a><a class="btn alt" href="#">Our work</a></div>
+  <div class="dots"><i></i><i></i><i></i></div>
+ </div>
+ <div class="ph">Hero photo placeholder</div>
+</div></div>
+
+<section><div class="wrap">
+ <div class="sh"><div><div class="eyebrow">What we do</div><h2>Our focus areas</h2></div><a href="#">View all →</a></div>
+ <div class="focus">
+  <div><svg viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"></path></svg><h3>Clean water</h3><p>Short description of this programme area.</p></div>
+  <div><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V9l7-5 7 5v11M10 20v-6h4v6"></path></svg><h3>Shelter &amp; relief</h3><p>Short description of this programme area.</p></div>
+  <div><svg viewBox="0 0 24 24"><path d="M2 8l10-4 10 4-10 4zM6 10v5c0 1.500 3 3 6 3s6-1.500 6-3v-5"></path></svg><h3>Education</h3><p>Short description of this programme area.</p></div>
+  <div><svg viewBox="0 0 24 24"><path d="M12 21s-8-5-8-11a4.500 4.500 0 0 1 8-2.500A4.500 4.500 0 0 1 20 10c0 6-8 11-8 11z"></path></svg><h3>Health</h3><p>Short description of this programme area.</p></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="sh"><div><div class="eyebrow">Latest</div><h2>News &amp; updates</h2></div><a href="#">All news →</a></div>
+ <div class="cards">
+  <div class="card"><div class="ph">Image</div><div class="b"><span class="tag">Update</span><h3>Headline of your latest news item</h3><p>Two lines of summary text go here as a placeholder.</p></div></div>
+  <div class="card"><div class="ph">Image</div><div class="b"><span class="tag">Field story</span><h3>Another headline for a recent project</h3><p>Two lines of summary text go here as a placeholder.</p></div></div>
+  <div class="card"><div class="ph">Image</div><div class="b"><span class="tag">Press</span><h3>A third headline about an event or report</h3><p>Two lines of summary text go here as a placeholder.</p></div></div>
+ </div>
+</div></section>
+
+<section class="stories"><div class="wrap story">
+ <div class="ph">Story photo placeholder</div>
+ <div>
+  <div class="eyebrow">Stories of change</div>
+  <h2>“A short, human headline from the field.”</h2>
+  <p style="color:var(--mute)">Placeholder paragraph introducing a beneficiary or volunteer story. Replace with real, consented stories from your own work.</p>
+  <blockquote>“Placeholder quote from a community member.”</blockquote>
+  <p style="margin-top:24px"><a class="btn" href="#">Read the story</a></p>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <div class="appeal">
+  <div>
+   <div class="eyebrow" style="color:var(--sun)">Current appeal</div>
+   <h2>Emergency response: [Appeal title]</h2>
+   <p style="color:#f3d6da">Placeholder: explain the situation, who is affected and what the funds will do.</p>
+   <div class="bar"><i></i></div><small>64% of goal raised</small>
+  </div>
+  <div>
+   <div class="amts"><span>$25</span><span>$50</span><span>$100</span></div>
+   <a class="btn" href="#" style="display:block;text-align:center">Donate now</a>
+  </div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="sh"><div><div class="eyebrow">Spotlight</div><h2>Where we work</h2></div></div>
+ <div class="tabs"><span>Region one</span><span>Region two</span><span>Region three</span></div>
+ <div class="cards">
+  <div class="card"><div class="ph">Image</div><div class="b"><h3>Project name</h3><p>Short placeholder description.</p></div></div>
+  <div class="card"><div class="ph">Image</div><div class="b"><h3>Project name</h3><p>Short placeholder description.</p></div></div>
+  <div class="card"><div class="ph">Image</div><div class="b"><h3>Project name</h3><p>Short placeholder description.</p></div></div>
+ </div>
+</div></section>
+
+<section class="stats"><div class="wrap">
+ <h2 style="margin-bottom:40px">Our impact in numbers</h2>
+ <div class="g">
+  <div><b>00,000</b><span>People supported</span></div>
+  <div><b>00</b><span>Communities</span></div>
+  <div><b>00</b><span>Active projects</span></div>
+  <div><b>000</b><span>Volunteers</span></div>
+ </div>
+ <p style="font-size:13px;color:#e8b9bf;margin-top:32px">Replace with your real figures.</p>
+</div></section>
+
+<footer><div class="wrap">
+ <div class="g">
+  <div><div class="logo" style="color:#fff;margin-bottom:14px">[Your NGO Name]</div><p>Short one-line description of the organisation and its registration details.</p></div>
+  <div><h4>About</h4><ul><li>Our story</li><li>Team</li><li>Reports</li><li>Careers</li></ul></div>
+  <div><h4>Get involved</h4><ul><li>Donate</li><li>Volunteer</li><li>Partner with us</li><li>Contact</li></ul></div>
+  <div><h4>Newsletter</h4><p>Get updates from the field.</p><div class="nl"><span>Your email</span><a class="btn" href="#" style="padding:10px 20px">Join</a></div></div>
+ </div>
+ <div class="copy"><span>© 2026 [Your NGO Name]. All rights reserved.</span><span>Privacy · Terms · Accessibility</span></div>
+</div></footer>
+</body></html>
